@@ -1,4 +1,58 @@
 body {
-  margin: 0;
+  max-width: 1440px;
+  margin: 0 auto;
   padding: 0;
+}
+
+button {
+  background: #0d606f;
+  color: #fff;
+  border-radius: 10px;
+}
+
+/* header styles start */
+header {
+  display: flex;
+  justify-content: space-between;
+  background: rgba(242, 120, 92, 0.7);
+  box-shadow: 0px 4px 4px 0px rgba(13, 96, 111, 0.5);
+  margin: 0;
+  padding: 25px 120px 24px;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo-txt {
+  color: #fff;
+  font-family: Magra;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding-left: 5px;
+}
+
+.nav__list {
+  display: flex;
+  gap: 42px;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.nav-item-link {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Red Hat Text";
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.login {
+  width: 103px;
+  height: 41px;
+  font-size: 16px;
 }
