@@ -84,6 +84,7 @@ header {
 }
 
 .preview-wrapper {
+  position: relative;
   width: 892px;
   margin-top: 122px;
   margin-left: 120px;
@@ -140,5 +141,21 @@ input::placeholder {
   margin-right: 18px;
   font-family: "Red Hat Text";
   font-size: 24px;
+  font-weight: 500;
+}
+
+/* end Preview section styles */
+
+/* start Steps section styles */
+.steps {
+  position: relative;
+  margin-top: 755px;
+  text-align: center;
+}
+
+h2 {
+  color: #f2785c;
+  font-family: "Red Hat Text";
+  font-size: 40px;
   font-weight: 500;
 }
