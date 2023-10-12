@@ -167,8 +167,9 @@ input:focus {
 /* start Steps section styles */
 .steps {
   position: relative;
-  margin-top: 755px;
+  margin-top: 845px;
   text-align: center;
+  margin-bottom: 97px;
 }
 
 h2 {
@@ -176,4 +177,24 @@ h2 {
   font-family: "Red Hat Text";
   font-size: 40px;
   font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.steps-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 131px;
+  margin-right: 132px;
+}
+
+.steps-desc {
+  margin-top: 26px;
+  color: #0d606f;
+  font-family: "Aleo";
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.step:nth-child(2) {
+  margin-left: 65px;
 }
