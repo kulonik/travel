@@ -169,7 +169,7 @@ input:focus {
   position: relative;
   margin-top: 845px;
   text-align: center;
-  margin-bottom: 77px;
+  margin-bottom: 46px;
 }
 
 h2 {
@@ -204,7 +204,11 @@ h2 {
 /* end steps styles */
 
 /* start destinations styles */
-
+.destinations {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+}
 .destination-wrapper {
   max-width: 1440px;
   overflow-x: hidden;
@@ -256,4 +260,39 @@ h2 {
   content: "USA";
   position: relative;
   bottom: -718px;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 24px auto 38px;
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(242, 120, 92, 0.5);
+}
+
+.dot:nth-child(2) {
+  background-color: #f2785c;
+}
+
+.destinations-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 228px;
+  height: 59px;
+  margin: 0 auto;
+  padding-left: 32px;
+  padding-right: 32px;
+  color: #fff;
+  font-family: Red Hat Text;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
