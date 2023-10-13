@@ -169,15 +169,15 @@ input:focus {
   position: relative;
   margin-top: 845px;
   text-align: center;
-  margin-bottom: 97px;
+  margin-bottom: 77px;
 }
 
 h2 {
+  text-align: center;
   color: #f2785c;
   font-family: "Red Hat Text";
   font-size: 40px;
   font-weight: 500;
-  margin-bottom: 40px;
 }
 
 .steps-wrapper {
@@ -185,6 +185,7 @@ h2 {
   justify-content: space-between;
   margin-left: 131px;
   margin-right: 132px;
+  margin-top: 40px;
 }
 
 .steps-desc {
@@ -193,8 +194,66 @@ h2 {
   font-family: "Aleo";
   font-size: 20px;
   font-weight: 400;
+  word-spacing: -1px;
 }
 
 .step:nth-child(2) {
-  margin-left: 65px;
+  margin-left: 70px;
+}
+
+/* end steps styles */
+
+/* start destinations styles */
+
+.destination-wrapper {
+  max-width: 1440px;
+  overflow-x: hidden;
+}
+
+.destinations-slider {
+  margin-top: 13px;
+  width: 2520px;
+  margin-left: calc(0px - ((2520px - 100%) / 2));
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 60px;
+}
+
+.destination-pic {
+  width: 800px;
+  height: 800px;
+  border-radius: 16px;
+  color: #fff;
+  font-family: "Red Hat Text";
+  font-size: 32px;
+  font-weight: 500;
+  padding-left: 15px;
+}
+
+.spain {
+  background-image: url(./assets/desktop/spain.jpg);
+}
+.spain::before {
+  content: "SPAIN";
+  position: relative;
+  bottom: -718px;
+}
+
+.japan {
+  background-image: url(./assets/desktop/japan.jpg);
+}
+
+.japan::before {
+  content: "JAPAN";
+  position: relative;
+  bottom: -718px;
+}
+
+.usa {
+  background-image: url(./assets/desktop/usa.jpg);
+}
+.usa::before {
+  content: "USA";
+  position: relative;
+  bottom: -718px;
 }
