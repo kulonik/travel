@@ -296,3 +296,31 @@ h2 {
   font-weight: 500;
   line-height: normal;
 }
+
+/* end destinations section styles */
+
+/* start stories section styles */
+
+.stories-caption {
+  margin-bottom: 40px;
+}
+.stories-wrapper {
+  background-image: url(./assets/desktop/boatInWinter.jpg);
+}
+
+.opacity {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 40px 125px 10px 120px;
+  margin-top: 10px;
+}
+
+.story {
+  display: flex;
+}
+
+.story-img {
+  border-radius: 16px;
+  box-shadow: 0px 4px 4px 0px #0d606f;
+  margin-right: 40px;
+  margin-bottom: 30px;
+}
