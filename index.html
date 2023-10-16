@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
   <meta charset="UTF-8">
@@ -10,6 +10,7 @@
     href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,400&family=Magra:wght@700&family=Red+Hat+Text:wght@500&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" href="./assets/logo/favicon.png" type="image/x-icon">
   <title>Travel</title>
 </head>
 
@@ -25,10 +26,10 @@
 
       <nav class="nav">
         <ul class="nav__list">
-          <li class="nav-item"><a href="#!" class="nav-item-link">How It Works</a></li>
-          <li class="nav-item"><a href="#!" class="nav-item-link">Plan Your Trip</a></li>
-          <li class="nav-item"><a href="#!" class="nav-item-link">Destinations</a></li>
-          <li class="nav-item"><a href="#!" class="nav-item-link">Travel Stories</a></li>
+          <li class="nav-item"><a href="#preview" class="nav-item-link">How It Works</a></li>
+          <li class="nav-item"><a href="#steps" class="nav-item-link">Plan Your Trip</a></li>
+          <li class="nav-item"><a href="#destinations" class="nav-item-link">Destinations</a></li>
+          <li class="nav-item"><a href="#stories" class="nav-item-link">Travel Stories</a></li>
         </ul>
       </nav>
 
@@ -41,7 +42,7 @@
 
     <section class="preview">
       <div class="preview-wrapper">
-        <h1>Explore the beauty of the World</h1>
+        <h1 id="preview">Explore the beauty of the World</h1>
         <p class="preview-desc">Receive personalized recommendations for countries, hotels, activities and more</p>
         <form action="post">
           <input type="text" placeholder="What would you like to do?">
@@ -49,9 +50,8 @@
         </form>
       </div>
     </section>
-    </div>
 
-    <section class="steps">
+    <section class="steps" id="steps">
 
       <h2>3 STEPS TO THE PERFECT TRIP</h2>
 
@@ -72,7 +72,7 @@
 
     </section>
 
-    <section class="destinations">
+    <section class="destinations" id="destinations">
       <h2>POPULAR DESTINATIONS</h2>
 
       <div class="destination-wrapper">
@@ -98,7 +98,7 @@
       </button>
     </section>
 
-    <section class="stories">
+    <section class="stories" id="stories">
       <h2 class="stories-caption">TRAVEL STORIES</h2>
 
       <div class="stories-wrapper">
