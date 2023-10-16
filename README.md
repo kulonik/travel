@@ -1,2 +1,2 @@
 # travel
-https://kulonik.github.com/travel/
+https://kulonik.github.io/travel/
