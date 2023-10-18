@@ -1,4 +1,450 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  margin: 0;
+  max-width: 1440px;
+  overflow-x: hidden;
+  margin: 0 auto;
   padding: 0;
+}
+
+button {
+  background: #0d606f;
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  font-family: "Red Hat Text";
+  font-size: 16px;
+  font-weight: 500;
+}
+
+button:hover,
+button:active {
+  background: #0d343a;
+}
+
+/* header styles start */
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  max-width: 1440px;
+  background: rgba(242, 120, 92, 0.7);
+  box-shadow: 0px 4px 4px 0px rgba(13, 96, 111, 0.5);
+  margin: 0;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 120px 13px;
+}
+.logo {
+  display: flex;
+}
+
+.logo-txt {
+  color: #fff;
+  font-family: Magra;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding-left: 5px;
+}
+
+.nav {
+  position: relative;
+  top: -5px;
+  left: -15px;
+}
+
+.nav__list {
+  display: flex;
+  gap: 42px;
+  padding-left: 0;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.nav-item-link {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Red Hat Text";
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.login {
+  width: 103px;
+  height: 41px;
+  font-size: 16px;
+  box-shadow: 0px 2px 3px 0px rgba(13, 96, 111, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* finish header style */
+
+/* start section preview style */
+.preview {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  background-image: url(./assets/desktop/mountains.jpg);
+  max-width: 1440px;
+  width: 100vw;
+  height: 765px;
+}
+
+.preview-wrapper {
+  position: relative;
+  width: 892px;
+  margin-top: 122px;
+  margin-left: 120px;
+}
+
+h1 {
+  color: #ffffff;
+  font-family: "Aleo", serif;
+  font-size: 78px;
+  font-weight: 700;
+  line-height: 96px;
+  font-style: normal;
+  margin-bottom: 32px;
+}
+
+.preview-desc {
+  color: #ffffff;
+  font-family: "Aleo", serif;
+  font-style: italic;
+  font-size: 20px;
+  margin-bottom: 45px;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 892px;
+  height: 95px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+input {
+  width: 560px;
+  height: 22px;
+  border: none;
+  font-family: Aleo;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+  background: rgba(255, 255, 255, 0);
+  margin-left: 40px;
+}
+
+input::placeholder {
+  color: #f2785c;
+}
+
+input[type="text"] {
+  color: #f2785c;
+}
+input:focus {
+  outline: none;
+}
+.preview-btn {
+  width: 228px;
+  height: 59px;
+  margin-right: 18px;
+  font-family: "Red Hat Text";
+  font-size: 24px;
+  font-weight: 500;
+}
+
+/* end Preview section styles */
+
+/* start Steps section styles */
+.steps {
+  position: relative;
+  margin-top: 845px;
+  text-align: center;
+  margin-bottom: 46px;
+}
+
+h2 {
+  text-align: center;
+  color: #f2785c;
+  font-family: "Red Hat Text";
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.steps-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 131px;
+  margin-right: 132px;
+  margin-top: 40px;
+}
+
+.steps-desc {
+  margin-top: 26px;
+  color: #0d606f;
+  font-family: "Aleo";
+  font-size: 20px;
+  font-weight: 400;
+  word-spacing: -1px;
+}
+
+.step:nth-child(2) {
+  margin-left: 70px;
+}
+
+/* end steps styles */
+
+/* start destinations styles */
+.destinations {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+}
+.destination-wrapper {
+  max-width: 1440px;
+  overflow-x: hidden;
+}
+
+.destinations-slider {
+  margin-top: 13px;
+  width: 2520px;
+  margin-left: calc(0px - ((2520px - 100%) / 2));
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 60px;
+}
+
+.destination-pic {
+  width: 800px;
+  height: 800px;
+  border-radius: 16px;
+  color: #fff;
+  font-family: "Red Hat Text";
+  font-size: 32px;
+  font-weight: 500;
+  padding-left: 15px;
+}
+
+.spain {
+  background-image: url(./assets/desktop/spain.jpg);
+}
+.spain::before {
+  content: "SPAIN";
+  position: relative;
+  bottom: -718px;
+}
+
+.japan {
+  background-image: url(./assets/desktop/japan.jpg);
+}
+
+.japan::before {
+  content: "JAPAN";
+  position: relative;
+  bottom: -718px;
+}
+
+.usa {
+  background-image: url(./assets/desktop/usa.jpg);
+}
+.usa::before {
+  content: "USA";
+  position: relative;
+  bottom: -718px;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 24px auto 38px;
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(242, 120, 92, 0.5);
+}
+
+.dot:nth-child(2) {
+  background-color: #f2785c;
+}
+
+.big-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 228px;
+  height: 59px;
+  margin: 0 auto;
+  padding-left: 32px;
+  padding-right: 32px;
+  color: #fff;
+  font-family: Red Hat Text;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/* end destinations section styles */
+
+/* start stories section styles */
+
+.stories-caption {
+  margin-bottom: 40px;
+}
+.stories-wrapper {
+  background-image: url(./assets/desktop/boatInWinter.jpg);
+  height: 1331px;
+}
+
+.opacity {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 40px 125px 10px 120px;
+  margin-top: 10px;
+}
+
+.story {
+  display: flex;
+}
+
+.story:nth-child(4) {
+  margin-bottom: 10px;
+}
+
+.story-img {
+  border-radius: 16px;
+  box-shadow: 0px 4px 4px 0px #0d606f;
+  margin-right: 40px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  color: #0d606f;
+  font-family: "Aleo";
+  font-size: 35px;
+  font-weight: 400;
+  letter-spacing: -1px;
+  word-spacing: 3px;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.story-desc p {
+  color: #0d606f;
+  font-family: "Aleo";
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: -0.15px;
+}
+
+.story-desc a {
+  color: #0d606f;
+  font-family: "Aleo";
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration-line: underline;
+}
+
+.stories-btn {
+  margin-left: 489px;
+  margin-bottom: 31px;
+}
+.stories-btn svg {
+  margin-right: 0px;
+}
+
+/* end stories section styles */
+
+/* start footer styles */
+
+footer {
+  height: 61px;
+  margin-top: -60px;
+  display: flex;
+  justify-content: end;
+}
+
+.copyright {
+  color: #fff;
+  font-family: "Red Hat Text";
+  font-size: 16px;
+  font-weight: 500;
+  align-self: center;
+  margin-right: 328px;
+}
+
+.socials {
+  width: 141px;
+  display: flex;
+  gap: 20px;
+  margin-top: 14px;
+  margin-right: 123px;
+}
+
+/* rsschool icon styles */
+.st0 {
+  fill: #fff;
+}
+
+.st1 {
+  clip-path: url(#SVGID_2_);
+}
+
+.st2 {
+  clip-path: url(#SVGID_4_);
+}
+
+.st3 {
+  clip-path: url(#SVGID_6_);
+}
+
+.st4 {
+  clip-path: url(#SVGID_8_);
+}
+
+.st5 {
+  fill: #fff;
+  stroke: #000;
+  stroke-width: 4;
+  stroke-miterlimit: 10;
+}
+
+.st6 {
+  clip-path: url(#SVGID_8_);
+}
+
+.st6,
+.st7 {
+  fill: none;
+  stroke: #000;
+  stroke-width: 4;
+  stroke-miterlimit: 10;
+}
+
+.st8,
+.st9 {
+  clip-path: url(#SVGID_10_);
+}
+
+.st9 {
+  fill: none;
+  stroke: #000;
+  stroke-width: 4;
+  stroke-miterlimit: 10;
 }
