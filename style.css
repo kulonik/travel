@@ -221,6 +221,7 @@ h2 {
 .destinations-slider {
   margin-top: 13px;
   width: 2520px;
+  height: 850px;
   margin-left: calc(0px - ((2520px - 100%) / 2));
   display: flex;
   flex-wrap: nowrap;
