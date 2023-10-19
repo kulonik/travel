@@ -476,3 +476,12 @@ footer {
     margin-top: 40px;
   }
 }
+
+@media only screen and (max-width: 1168px) {
+  .text {
+    -webkit-line-clamp: 4;
+  }
+  .stories-btn {
+    margin: 30px auto;
+  }
+}
