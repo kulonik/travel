@@ -522,3 +522,39 @@ footer {
     width: 700px;
   }
 }
+
+@media only screen and (max-width: 830px) {
+  .logo-txt {
+    font-size: 26px;
+  }
+  .nav {
+    left: 0;
+  }
+  .preview-wrapper {
+    width: 760px;
+  }
+
+  h1 {
+    font-size: 56px;
+  }
+  .opacity {
+    padding: 40px;
+  }
+  .text {
+    -webkit-line-clamp: 2;
+  }
+  footer {
+    justify-content: space-between;
+  }
+  .copyright {
+    margin-left: 30px;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .logo-txt {
+    font-size: 20px;
+    margin-top: 6px;
+    margin-right: 10px;
+  }
+}
