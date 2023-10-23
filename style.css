@@ -605,4 +605,11 @@ footer {
   input {
     margin-left: 5px;
   }
+  .story-img {
+    margin-right: 10px;
+  }
+  .opacity {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
