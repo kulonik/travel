@@ -613,3 +613,22 @@ footer {
     padding-right: 10px;
   }
 }
+
+@media only screen and (max-width: 510px) {
+  form {
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .preview-btn {
+    margin-right: 0;
+  }
+  .copyright {
+    margin-left: 10px;
+  }
+  .socials {
+    margin-right: 60px;
+  }
+}
